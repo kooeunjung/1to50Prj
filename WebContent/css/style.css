@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+body {
+	background-color: #2b2b2b;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+}
+
+header {
+	background-color: #2b2b2b;
+	/* border-bottom: 1px solid gray; */
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.subtitle {
+	padding: 20px;
+	text-align: center;
+	color: red;
+	font-size: 20px;
+	font-family: lato;
+	font-weight: 600;
+}
+
+.title {
+	text-align: center;
+	font-size: 50px;
+	color: #808080;
+	font-family: lato;
+	font-weight: 600;
+}
+
+footer {
+	background-color: #2b2b2b;
+	/* border-top: 1px solid gray; */
+	padding: 5px;
+	text-align: center;
+	height:10px;
+}
+
+.content {
+	display: flex;
+	color: white;
+	font-weight: bold;
+	font-family: lato;
+	
+}
+
+.content nav {
+	flex-basis: 20%;
+	/* border-right: 1px solid gray; */
+}
+
+.content aside {
+	flex-basis: 20%;
+	/* border-left: 1px solid gray; */
+}
+
+nav, aside {
+	flex-shrink:;
+}
+/* main층  */
+main {
+	padding: 20px;
+	display: flex;
+	flex-shrink: 2;
+	flex-basis: 70%;
+	justify-content: Center;
+	height:80%;
+}
+
+#left {
+	/* border-right: 1px solid gray; */
+	flex-direction: row;
+	padding: 20px;
+	flex-basis: 50%;
+}
+
+#left_timer {
+	/* 	border: 1px solid gray; */
+	height: 140px;
+	display: flex;
+	flex-direction: column;
+}
+
+#left_board {
+	height: 400px;
+	/* border: 1px solid gray; */
+	display: flex;
+	flex-direction: row;
+	display: flex;
+	justify-content: Center;
+}
+
+#right {
+	flex-direction: row;
+	padding: 20px;
+	flex-basis: 50%;
+}
+
+#right_rangking {
+	display: flex;
+	flex-direction: row;
+	padding-top: 0px;
+	height: 140px;
+	/* border: 1px solid gray; */
+}
+
+#right_chatting {
+	padding: 10px;
+	padding-left: 30px;
+	height: 400px;
+	/* border: 1px solid gray; */
+	height: 400px;
+}
+
+#footer {
+	backgroud-color: white;
+}
+
+p {
+	font-size: 9pt;
+	color: #808080;
+}
+
+p>.p1 {
+	font-size: 8pt;
+	color: #ff80c0;
+}
+/* ------------------layout---------------- */
+
+/* -------------------게임---------------------------- */
+#show_record {
+	display: flex;
+	flex-direction: row;
+	pading-buttom: 5px;
+}
+
+.show_nick_record {
+	padding-left: 25%;
+}
+
+
+#show_nickname {
+	padding-left:15%;
+}
+
+.show_everyrecord {
+	padding-left: 5%;
+	padding-bottom: 20px;
+	color: red;
+	font-weight: bold;
+	font-family: lato;
+}
+
+/* -------- */
+#gamecontroller {
+	display: flex;
+	flex-direction: row;
+	padding-buttom: 20px;
+}
+
+#start, #restart, #time {
+	display: flex;
+	flex-basis: 20%;
+	justify-content: Center;
+	padding: 10px;
+}
+
+#time {
+	font-size: 25pt;
+	color: #ff0000;
+	padding-top: 14;
+}
+
+.mal {
+	display: flex;
+	flex-basis: 20%;
+}
+
+.mal2 {
+	flex-basis: 15%;
+}
+
+#startBtn, #restartBtn {
+	width: 60px;
+	height: 60px;
+	border-radius: 40px 40px 40px 40px;
+	background-color: #4b4b4b;
+	font-size: 10pt;
+	color: #ff0000;
+	font-weight: bold;
+	border: 1px solid red;
+	/* padding:5px 0px 0px 5px; */
+	justify-content: Center;
+}
+/* -------- */
+.btn {
+	width: 60px;
+	height: 60px;
+}
+
+/* ------랭킹 - ------ ------- */
+#ranking_Space {
+	width: 20px;
+}
+
+#weekly_ranking {
+	display: flex;
+	flex-direction: column;
+	padding-top: 0px;
+	height: 140px;
+	/* border: 1px solid gray; */
+}
+
+.ranking_Space {
+	width: 20px;
+}
+
+#every_ranking {
+	display: flex;
+	flex-direction: column;
+	padding-top: 0px;
+	height: 140px;
+	/* border: 1px solid gray; */
+}
+
+table .rangkingtable {
+	/* border-bottom: 1px solid #808080; */
+	
+}
+
+.ranking {
+	bottom: 0px;
+	width: 200px;
+	height: 120px;
+	/* border: 1px solid red; */
+	overflow: hidden;
+	font-size: 8pt;
+	color: #808080;
+	font-weight: bold;
+}
+
+.rankingTitle {
+	width: 200px;
+	height: 20px;
+	left: 10px;
+	background-color: #ff0000;
+	border: 1px solid red;
+	border-radius: 10px;
+	font-size: 8pt;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: lato;
+	font-weight: 600;
+	justify-content: Center;
+	font-weight: 600;
+}
+
+#stage {
+	font-size: 9pt;
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.hoho {
+	font-size: 9pt;
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.hoho2 {
+	font-size: 9pt;
+	color: #252525;
+	font-weight: bold;
+}
+
+.hoho3 {
+	font-size: 9pt;
+	color: #3b3b3b;
+	font-weight: bold;
+}
+
+/*--------------- 채팅 -------------*/
+#chatboard {
+	display: flex;
+	flex-direction: column;
+	left:
+}
+
+#messageTextArea {
+	width: 60%;
+	background: #585858;
+	font-family: lato;
+	color: #ff0000;
+	border-radius: 10px;
+}
+
+#messageText {
+	width: 50%;
+	background: #c0c0c0;
+	font-family: lato;
+	color: #ff0000;
+	border-radius: 10px;
+}
+
+#sendbox {
+	display: flex;
+	flex-direction: row;
+}
+button#sendBtn{
+  height:15px;
+  width:30px;
+  color: white;
+  background: #FF3838;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+	
+}
